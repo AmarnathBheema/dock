@@ -8,6 +8,8 @@ sudo apt-get -y install docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 cd dock/
+sudo cp docker-compose.yml /home/ubuntu
+cd /
 sudo systemctl start docker
 sudo systemctl enable docker
 sudo docker-compose up -d
